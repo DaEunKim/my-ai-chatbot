@@ -14,8 +14,10 @@ public class BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @CreatedDate
     private OffsetDateTime createdAt;
+
     @LastModifiedDate
     private OffsetDateTime updatedAt;
 }
