@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: local   # 로컬 개발 시 기본 profile
+  jackson:
+    serialization:
+      indent_output: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.web: INFO
+    com.yourproject: DEBUG
+
